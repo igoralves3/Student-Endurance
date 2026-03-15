@@ -104,6 +104,6 @@ public class Boss2 : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.Label(new Rect(20, 90, 1000, 100), "Collect oranges from water and avoid fishes to defeat enemines", style);
+        //GUI.Label(new Rect(20, 90, 1000, 100), "Collect oranges from water and avoid fishes to defeat enemines", style);
     }
 }

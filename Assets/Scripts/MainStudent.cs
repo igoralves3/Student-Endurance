@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
+using TMPro;
+using System.Globalization;
+using System.Reflection;
 
 public class MainStudent : MonoBehaviour
 {
@@ -41,7 +46,7 @@ public class MainStudent : MonoBehaviour
     public static int lifes = 3;
     public static int oranges = 5;
     public static int previousOranges = 5;
-    public static string cenaAtual = "Stage0";
+    public static string cenaAtual = "Stage4";
     bool canThrow = true;
     int resistence;
 
@@ -61,6 +66,14 @@ public class MainStudent : MonoBehaviour
     private bool textoAtivo = true;
 
     private bool canThrowAtStage = true;
+
+    public TextMeshProUGUI textLifes, textOranges, extraText;
+
+    public Image healthFill;
+
+    public Canvas partnerCanvas;
+
+    private GameObject partner;
 
     // Start is called before the first frame update
     void Start()
@@ -88,6 +101,13 @@ public class MainStudent : MonoBehaviour
         {
             canThrowAtStage = true;
         }
+
+        partner = GameObject.FindGameObjectWithTag("PartnerStudent");
+
+        UpdateUI();
+        SetExtraText();
+
+        UpdatePartnerCanvas();
     }
 
     private void LifeLost()
@@ -216,6 +236,9 @@ public class MainStudent : MonoBehaviour
         {
             jumpFrames = 0.0f;
         }
+
+        UpdateUI();
+        UpdatePartnerCanvas();
     }
 
     void OnCollisionEnter2D(Collision2D collision) {
@@ -227,44 +250,14 @@ public class MainStudent : MonoBehaviour
                 //jumping = false;
             
         }
-        /*
-        if (collision.gameObject.tag == "Orangebackpack")
-        {
-            
-                canJump = true;
-            
-                oranges += collision.gameObject.GetComponent<OrangeBackpack>().oranges;
-                Destroy(collision.gameObject);
-            
-        }
-        if (collision.gameObject.tag == "Lifebackpack")
-        {
-            canJump = true;
-
-            lifes++;
-            Destroy(collision.gameObject);
-        }*/
+       
         if (collision.gameObject.tag == "EnemyStudent" || collision.gameObject.tag == "EnemySupport" || collision.gameObject.tag == "OtherEnemy"
             || collision.gameObject.tag == "Dog" || collision.gameObject.tag == "Cat")
         {
 
             Debug.Log("enter");
             canJump = true;
-            /*
-            if (collision.gameObject.tag == "EnemyStudent")
-            {
-                AudioSource.PlayClipAtPoint(impact1, transform.position, (float)MenuManager.soundVolume);
-                hp -= collision.gameObject.GetComponent<EnemyStudentMove>().damage;
-            }
-            else
-            {
-                hp -= Random.Range(1, 6);
-            }
-            if (hp <= 0)
-            {
-                LifeLost();
-            }*/
-
+           
             //var deltaY = (collision.gameObject.GetComponent<BoxCollider2D>().size.y/2);
             var deltaY = (collision.gameObject.transform.lossyScale.y / 2); //* 0.32f;
             if (deltaY < 1)
@@ -457,17 +450,73 @@ public class MainStudent : MonoBehaviour
 
 
     }
+
+    void UpdateUI()
+    {
+        healthFill.fillAmount = hp * 1.0f / 100.0f;
+
+        textLifes.text = " x "+lifes.ToString();
+        textOranges.text = " x " + oranges.ToString();
+
+        
+    }
+
+    void SetExtraText()
+    {
+        if (cenaAtual == "Stage0")
+        {
+            extraText.text = "Use left and right arrow keys to move.\nPress Z to Jump and X to throw oranges.";
+        }
+        else if (cenaAtual == "Stage4")
+        {
+            extraText.text = "Collect the falling oranges to defeat enemines.";
+        }
+        else if (cenaAtual == "Stage8")
+        {
+            extraText.text = "Collect oranges from water and avoid fishes to defeat enemines.";
+        }
+        else if (cenaAtual == "Stage12")
+        {
+            extraText.text = "Collect oranges from lab rats and avoid sewer rats to defeat enemines.";
+        }else if (cenaAtual == "Stage16")
+        {
+            extraText.text = "Defeat enemines without fall and avoid his apples.\nYou can grab their oranges.";
+        }
+        else if (cenaAtual == "Stage6" || cenaAtual == "Stage14" || cenaAtual == "Stage18")
+        {
+            extraText.text = "Run, dodge hurdles and escape from the bully.";
+        }
+    }
+
+    void UpdatePartnerCanvas()
+    {
+        if (partner != null)
+        {
+            var partnerbar = GameObject.Find("PartnerHealthBar");
+            if (partner != null)
+            {
+                var pi = partnerbar.GetComponent<Image>();
+
+                pi.fillAmount = PartnerMove.hp * 1.0f / 20.0f;
+            }
+        }
+        else
+        {
+            partnerCanvas.enabled = false;
+        }
+    }
     
     void OnGUI() {
-        Scene scene = SceneManager.GetActiveScene();
+       // Scene scene = SceneManager.GetActiveScene();
         //GUI.Label(new Rect(20, 20, 1000, 100), "HP: "+hp.ToString(), style);
         //GUI.Label(new Rect(20, 20, hp, 20), Color.blue);
 
         
         
-        GUI.DrawTexture(new Rect(20, 20, hp, 25), blueTexture, ScaleMode.StretchToFill);
+        //GUI.DrawTexture(new Rect(20, 20, hp, 25), blueTexture, ScaleMode.StretchToFill);
         //GUI.Label(new Rect(20,20,100,20),hp.ToString(),style);
 
+        /*
         GUI.DrawTexture(new Rect(20, 45, 20, 20), lifeUITexture, ScaleMode.ScaleToFit);
         GUI.Label(new Rect(40, 45, 1000, 20), " x " + lifes.ToString(), style);
         GUI.DrawTexture(new Rect(20, 65, 20, 20), orangeUITexture, ScaleMode.ScaleToFit);
@@ -478,7 +527,7 @@ public class MainStudent : MonoBehaviour
             GUI.Label(new Rect(25, 90, 1000, 100), "Use left and right arrow keys to move.", style);
             GUI.Label(new Rect(25, 110, 1000, 100), "Press Z to Jump and X to throw oranges.", style);
         }
-
+        */
     }
     private void Awake()
     {

@@ -79,6 +79,6 @@ public class ChaserBullyMove : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.Label(new Rect(20, 90, 1000, 100), "Run, dodge hurdles and escape from the bully", style);
+        //GUI.Label(new Rect(20, 90, 1000, 100), "Run, dodge hurdles and escape from the bully", style);
     }
 }

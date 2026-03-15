@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class EndlessAudio : MonoBehaviour
 {
+
+    public AudioSource audio;
+
     // Start is called before the first frame update
     void Start()
     {
-        
-        
+        audio = GetComponent<AudioSource>();
+        audio.volume = (float) MenuManager.musicVolume;   
     }
 
     // Update is called once per frame
@@ -20,7 +23,7 @@ public class EndlessAudio : MonoBehaviour
     void Awake()
     {
         
-        //DontDestroyOnLoad(transform.gameObject);
+        DontDestroyOnLoad(transform.gameObject);
         
         
     }

@@ -257,8 +257,8 @@ public class PartnerMove : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.Label(new Rect(200, 20, 1000, 20), "Partner HP:", style);
-        GUI.DrawTexture(new Rect(200, 40, hp*5, 25), blueTexture, ScaleMode.StretchToFill);
+        //GUI.Label(new Rect(200, 20, 1000, 20), "Partner HP:", style);
+        //GUI.DrawTexture(new Rect(200, 40, hp*5, 25), blueTexture, ScaleMode.StretchToFill);
         //GUI.Label(new Rect(200, 40, 100, 20), hp.ToString(),style);
     }
 

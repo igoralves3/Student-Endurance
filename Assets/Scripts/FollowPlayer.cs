@@ -51,7 +51,10 @@ public class FollowPlayer : MonoBehaviour
 
         Scene scene = SceneManager.GetActiveScene();
 
-        cam.backgroundColor = levelBackgrounds[scene.buildIndex-1];
+
+        var nextStage = MainStudent.cenaAtual.Substring("Stage".Length);
+
+        cam.backgroundColor = levelBackgrounds[int.Parse(nextStage)];
         /*
         if (scene.buildIndex == 0 || scene.buildIndex == 4)
         {

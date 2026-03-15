@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour
 {
 
-    public AudioSource audioSource;
-    public AudioSource audioSource2;
+    public static AudioSource audioSource;
+    public  AudioSource audioSource2;
     public AudioClip soundTest;
     //private AudioSource aud;
 
@@ -17,7 +17,7 @@ public class MenuManager : MonoBehaviour
     const int CreditsState = 3;
     const int QuitState = 4;
     int curState = 0;
-    private double musicVolume = 0.5;
+   public static double musicVolume = 0.5;
     public static double soundVolume = 0.5;
 
     GUIStyle style;
@@ -39,14 +39,23 @@ public class MenuManager : MonoBehaviour
     {
         audioSource2 = GetComponent<AudioSource>();
 
+       audioSource = GameObject.Find("Music1").GetComponent<AudioSource>();
+
+        audioSource.volume =(float) musicVolume;
+
         var lista = GameObject.FindGameObjectsWithTag("Audio");
-        for (int i = 0; i < lista.Length - 1; i++)
+        for (int i = 0; i < lista.Length-1; i++)
         {
-            Destroy(lista[i]);
+          
+                Destroy(lista[i]);
+            
         }
 
+
+
+
         musicVolume = audioSource.volume;
-        soundVolume = 0.5;
+        //soundVolume = 0.5;
 
         curState = TitleState;
 
@@ -60,9 +69,47 @@ public class MenuManager : MonoBehaviour
         //style2.alignment = TextAnchor.MiddleCenter;
     }
 
+    public static void ButtonPress(string name)
+    {
+        switch (name)
+        {
+            case "Play":
+
+                MainStudent.hp = 100;
+                MainStudent.lifes = 3;
+                MainStudent.oranges = 5;
+                MainStudent.cenaAtual = "Stage0";
+
+
+
+                SceneManager.LoadScene(MainStudent.cenaAtual);
+
+                break;
+
+            case "Tutorial":
+                SceneManager.LoadScene("TutorialMenu");
+                break;
+
+            case "Options":
+                SceneManager.LoadScene("OptionsScreen");
+                break;
+            case "Credits":
+                SceneManager.LoadScene("CreditsScene");
+                break;
+            case "Back":
+                SceneManager.LoadScene("Menu");
+                break;
+
+            default:
+                break;
+        }
+    
+    }
+
     // Update is called once per frame
     void Update()
     {
+        /*
         switch (curState)
         {
             case TitleState:
@@ -169,18 +216,21 @@ public class MenuManager : MonoBehaviour
             default:
                 break;
 
-        }
+        }*/
     }
 
     void OnGUI()
     {
+        /*
         string menuOption1 = "Start Game (Press 1)";
         string menuOption2 = "Tutorial (Press 2)";
         string menuOption3 = "Options (Press 3)";
         string menuOption4 = "Credits (Press 4)";
         string menuOption5 = "Exit Game (Press 5)";
+        */
 
 
+        /*
         switch (curState)
         {
             case TitleState:
@@ -246,12 +296,13 @@ public class MenuManager : MonoBehaviour
                 break;
 
         }
+        */
     }
 
     void Awake()
     {
-        
-        DontDestroyOnLoad(audioSource.gameObject);
+        //audioSource = GameObject.Find("Music1").GetComponent<AudioSource>();
+        //DontDestroyOnLoad(audioSource.gameObject);
     }
     
 }

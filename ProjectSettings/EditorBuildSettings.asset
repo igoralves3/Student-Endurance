@@ -12,6 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 080b954b16a92a24ab528eded1688a58
   - enabled: 1
+    path: Assets/Scenes/MenuScreens/TutorialMenu.unity
+    guid: 9fe1c55e7cde77a4f972adcc43c04078
+  - enabled: 1
+    path: Assets/Scenes/MenuScreens/OptionsScreen.unity
+    guid: bfdab187a991d504a9574bdb5f321ab1
+  - enabled: 1
+    path: Assets/Scenes/MenuScreens/CreditsScene.unity
+    guid: eb7d6ace8e17da248ac50a123ed0e93e
+  - enabled: 1
     path: Assets/Scenes/Stage0.unity
     guid: 9e201582cc6c16046a1ca0fbe6d9f3db
   - enabled: 1

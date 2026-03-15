@@ -35,12 +35,19 @@ public class Enter : MonoBehaviour
                 }
                 else
                 {
-                    var vitimasResgatadas = GameObject.FindGameObjectsWithTag("RunnerStudent");
+                    var nextStage = MainStudent.cenaAtual.Substring("Stage".Length);
+
+                    var nextStageNumber = (int.Parse(nextStage) + 1).ToString();
+
+                   var vitimasResgatadas = GameObject.FindGameObjectsWithTag("RunnerStudent");
                     foreach (var v in vitimasResgatadas)
                     {
                         MainStudent.lifes = MainStudent.lifes + 1;
                     }
-                    MainStudent.cenaAtual = "Stage" + (scene.buildIndex).ToString();
+                   
+                   
+
+                    MainStudent.cenaAtual = "Stage" + (nextStageNumber);// (scene.buildIndex).ToString();
                     SceneManager.LoadScene(MainStudent.cenaAtual);
                 }
             }
