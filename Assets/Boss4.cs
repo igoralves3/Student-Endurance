@@ -24,7 +24,7 @@ public class Boss4 : MonoBehaviour
             Scene scene = SceneManager.GetActiveScene();
             if (scene.name.StartsWith("Stage"))
             {
-                if (scene.buildIndex == 21)
+                if (scene.name == "Stage20")
                 {
                     MainStudent.hp = 100;
                     MainStudent.lifes = 3;
@@ -39,7 +39,7 @@ public class Boss4 : MonoBehaviour
                     {
                         MainStudent.lifes = MainStudent.lifes + 1;
                     }
-                    MainStudent.cenaAtual = "Stage" + (scene.buildIndex ).ToString();
+                    MainStudent.cenaAtual = "Stage" + (scene.buildIndex-3).ToString();
                     SceneManager.LoadScene(MainStudent.cenaAtual);
                 }
             }
@@ -49,7 +49,7 @@ public class Boss4 : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.Label(new Rect(20, 90, 1000, 100), "Defeat enemines without fall and avoid his apples.", style);
-        GUI.Label(new Rect(20, 110, 1000, 100), "You can grab his oranges.", style);
+        //GUI.Label(new Rect(20, 90, 1000, 100), "Defeat enemines without fall and avoid his apples.", style);
+        //GUI.Label(new Rect(20, 110, 1000, 100), "You can grab his oranges.", style);
     }
 }

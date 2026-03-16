@@ -40,7 +40,7 @@ public class Enter : MonoBehaviour
                 {
                    
                     Debug.Log("concluindo fase " + scene.name);
-                    //MainStudent.level++;
+                    
                     var vitimasResgatadas = GameObject.FindGameObjectsWithTag("RunnerStudent");
                     foreach (var v in vitimasResgatadas)
                     {

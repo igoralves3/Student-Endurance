@@ -47,7 +47,7 @@ public class OrangeMove : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "EnemyStudent" || collision.gameObject.tag == "ThrowerStudent")
+        if (collision.gameObject.tag == "EnemyStudent" || collision.gameObject.tag == "ThrowerStudent" || collision.gameObject.tag == "DeepWater")
         {
             Destroy(gameObject);
         }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class RunnerStudent : MonoBehaviour
@@ -65,7 +66,7 @@ public class RunnerStudent : MonoBehaviour
         var mochilas = GameObject.FindGameObjectsWithTag("Hurdlebackpack");
         foreach (var m in mochilas) {
             var distance = Vector3.Distance(transform.position, m.transform.position);
-            if (distance <= 3 && canJump) {
+            if (distance <= 3 && canJump && transform.position.x <= m.transform.position.x) {
                 
                 var forceTemp = m_rigidBody.velocity.y + force;
                 if (forceTemp >= force)
@@ -83,7 +84,7 @@ public class RunnerStudent : MonoBehaviour
         foreach (var p in paredesNoMeio)
         {
             var distance = Vector3.Distance(transform.position, p.transform.position);
-            if (distance <= 3 && canJump)
+            if (distance <= 3 && canJump && transform.position.x <= p.transform.position.x)
             {
 
                 var forceTemp = m_rigidBody.velocity.y + force;

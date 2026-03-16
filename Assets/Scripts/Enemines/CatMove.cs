@@ -28,6 +28,8 @@ public class CatMove : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        bool foundDog = false;
+
         var dogs = GameObject.FindGameObjectsWithTag("Dog");
         foreach (var d in dogs)
         {
@@ -44,9 +46,32 @@ public class CatMove : MonoBehaviour
                     transform.position += Vector3.right * speed * Time.deltaTime;
                     curDir = 1;
                 }
+                foundDog = true;
                 break;
             }
         }
+        var player = GameObject.FindGameObjectWithTag("Player");
+
+        if (player != null && !foundDog)
+        {
+            var distancia = Vector2.Distance(transform.position, player.transform.position);
+            if (distancia < 5)
+            {
+                if (transform.position.x < player.transform.position.x)
+                {
+                    transform.position += Vector3.right * speed * Time.deltaTime;
+                    curDir = 1;
+                }
+                else if (transform.position.x > player.transform.position.x)
+                {
+                    transform.position -= Vector3.right * speed * Time.deltaTime;
+                    curDir = -1;
+                }
+                
+            }
+        }
+
+
         if (curDir == -1)
         {
             m_SpriteRenderer.flipX = false;
