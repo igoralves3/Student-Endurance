@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -25,8 +26,10 @@ public class Enter : MonoBehaviour
             Scene scene = SceneManager.GetActiveScene();
             if (scene.name.StartsWith("Stage"))
             {
-                if (scene.buildIndex == 21)
+                if (scene.name == "Stage20")
                 {
+                    
+
                     MainStudent.hp = 100;
                     MainStudent.lifes = 3;
                     MainStudent.oranges = 5;
@@ -35,11 +38,10 @@ public class Enter : MonoBehaviour
                 }
                 else
                 {
-                    var nextStage = MainStudent.cenaAtual.Substring("Stage".Length);
-
-                    var nextStageNumber = (int.Parse(nextStage) + 1).ToString();
-
-                   var vitimasResgatadas = GameObject.FindGameObjectsWithTag("RunnerStudent");
+                   
+                    Debug.Log("concluindo fase " + scene.name);
+                    //MainStudent.level++;
+                    var vitimasResgatadas = GameObject.FindGameObjectsWithTag("RunnerStudent");
                     foreach (var v in vitimasResgatadas)
                     {
                         MainStudent.lifes = MainStudent.lifes + 1;
@@ -47,7 +49,7 @@ public class Enter : MonoBehaviour
                    
                    
 
-                    MainStudent.cenaAtual = "Stage" + (nextStageNumber);// (scene.buildIndex).ToString();
+                    MainStudent.cenaAtual = "Stage" +  (scene.buildIndex-3).ToString();
                     SceneManager.LoadScene(MainStudent.cenaAtual);
                 }
             }

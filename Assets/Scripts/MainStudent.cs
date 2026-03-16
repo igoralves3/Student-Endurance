@@ -46,7 +46,8 @@ public class MainStudent : MonoBehaviour
     public static int lifes = 3;
     public static int oranges = 5;
     public static int previousOranges = 5;
-    public static string cenaAtual = "Stage4";
+    public static string cenaAtual = "Stage0";
+    public static int level = 0;
     bool canThrow = true;
     int resistence;
 
@@ -352,7 +353,7 @@ public class MainStudent : MonoBehaviour
         if (collision.gameObject.tag == "EnemyStudent" || collision.gameObject.tag == "ThrowerStudent" 
             || collision.gameObject.tag == "OtherEnemy" || collision.gameObject.tag == "Cat" || collision.gameObject.tag == "Dog")
         {
-            Debug.Log("stay");
+            
             canJump = true;
             if (resistence < 30)
             {

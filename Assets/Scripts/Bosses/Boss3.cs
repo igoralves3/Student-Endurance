@@ -36,7 +36,7 @@ public class Boss3 : MonoBehaviour
                 case 1:
                     for (int i = 0; i < 3; i++)
                     {
-                        newX = i - 10;
+                        newX = i * 10 - 10;
                         newY = 2;
                         var newPositionI = new Vector3(newX, newY, 0);
                         var newEnemyI = Instantiate(inimigo1, newPositionI, transform.rotation) as GameObject;
@@ -48,7 +48,7 @@ public class Boss3 : MonoBehaviour
                 case 2:
                     for (int i = 0; i < 3; i++)
                     {
-                        newX = i - 10;
+                        newX = i*10 - 10;
                         newY = 5;
                         var newPositionI = new Vector3(newX, newY, 0);
                         var newEnemyI = Instantiate(inimigo1, newPositionI, transform.rotation) as GameObject;
@@ -60,24 +60,24 @@ public class Boss3 : MonoBehaviour
                 case 3:
                     for (int i = 0; i < 2; i++)
                     {
-                        newX = i - 10;
+                        newX = i*20 - 10;
                         newY = 2;
                         var newPositionI = new Vector3(newX, newY, 0);
                         var newEnemyI = Instantiate(inimigo1, newPositionI, transform.rotation) as GameObject;
                     }
                     for (int i = 0; i < 3; i++)
                     {
-                        newX = i;
+                        newX = i*10-10;
                         newY = 5;
                         var newPositionI = new Vector3(newX, newY, 0);
                         var newEnemyI = Instantiate(inimigo1, newPositionI, transform.rotation) as GameObject;
                     }
-                    newX = -20;
-                    newY = 10;
+                    newX = -18;
+                    newY = 8;
                     var PositionSecondLast = new Vector3(newX, newY, 0);
                     var PositionLast = Instantiate(inimigo1, PositionSecondLast, transform.rotation) as GameObject;
-                    newX = 20;
-                    newY = 10;
+                    newX = 18;
+                    newY = 8;
                     PositionSecondLast = new Vector3(newX, newY, 0);
                     PositionLast = Instantiate(inimigo1, PositionSecondLast, transform.rotation) as GameObject;
 
@@ -86,7 +86,7 @@ public class Boss3 : MonoBehaviour
                     break;
 
                 default:
-                    var novaEntrada = Instantiate(entry, new Vector3(0, 6, 0), transform.rotation) as GameObject;
+                    var novaEntrada = Instantiate(entry, new Vector3(-5, 6, 0), transform.rotation) as GameObject;
                     break;
             }
         }
@@ -94,6 +94,6 @@ public class Boss3 : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.Label(new Rect(20, 90, 1000, 100), "Collect oranges from lab rats and avoid sewer rats to defeat enemines", style);
+        //GUI.Label(new Rect(20, 90, 1000, 100), "Collect oranges from lab rats and avoid sewer rats to defeat enemines", style);
     }
 }

@@ -1,22 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
+using TMPro;
+using System.Globalization;
 
 public class PartnerBag : MonoBehaviour
 {
 
     public GameObject partner;
 
+    public GameObject text;
+
+    private int frames = 0;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        text = GameObject.Find("TextHelp");
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        frames++;
+        if (frames >= 60)
+        {
+            frames = 0;
+            text.active = !text.active;
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)

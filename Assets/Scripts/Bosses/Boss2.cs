@@ -13,18 +13,29 @@ public class Boss2 : MonoBehaviour
 
     GUIStyle style;
 
+
+    List<Vector3> lastSpawnPoints;
+
     // Start is called before the first frame update
     void Start()
     {
         etapa = 1;
         style = new GUIStyle();
         style.fontSize = 24;
+
+        lastSpawnPoints = new List<Vector3>()
+        {
+            new Vector3(7,1,0),
+            new Vector3(-10,6,0),
+            new Vector3(10,6,0),
+            new Vector3(-7,1,0),
+        };
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        Debug.Log(etapa);
+        //Debug.Log(etapa);
         var inimigos = GameObject.FindGameObjectsWithTag("EnemyStudent");
         if (inimigos == null || inimigos.Length == 0)
         {
@@ -81,14 +92,14 @@ public class Boss2 : MonoBehaviour
                     {
                         newX = i - 2;
                         if (newX < 0) {
-                            newX-=5;
+                            newX-=6;
                         }
                         else
                         {
-                            newX+=5;
+                            newX+=6;
                         }
                         newY = 2;
-                        var newPositionI = new Vector3(newX, newY, 0);
+                        var newPositionI = lastSpawnPoints[i];//new Vector3(newX, newY, 0);
                         var newEnemyI = Instantiate(inimigo1, newPositionI, transform.rotation) as GameObject;
                     }
 

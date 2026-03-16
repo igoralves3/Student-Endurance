@@ -14,9 +14,17 @@ public class RunnerStudent : MonoBehaviour
     bool canJump = true;
     bool jumping = false;
 
+    public GameObject text;
+
+    private int frames = 0;
+
     // Start is called before the first frame update
     void Start()
     {
+        text = GameObject.Find("TextRunning");
+
+        text.active = false;
+
         m_rigidBody = GetComponent<Rigidbody2D>();
         player = GameObject.FindWithTag("Player").transform;
         chaser = GameObject.FindWithTag("ChaserStudent").transform;
@@ -34,11 +42,25 @@ public class RunnerStudent : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (transform.position.x > chaser.position.x && transform.position.x < player.position.x-2) {
 
             transform.position += Vector3.right * speed * Time.deltaTime;
+            if (!text.active && frames == 0) {
+                text.active = true;
+                
+            }
+            else
+            {
+                frames++;
+                if (frames >= 60)
+                {
+                    frames = 60;
+                    text.active = false;
+                }
+
+            }
         }
         var mochilas = GameObject.FindGameObjectsWithTag("Hurdlebackpack");
         foreach (var m in mochilas) {
