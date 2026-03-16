@@ -99,6 +99,15 @@ public class MenuManager : MonoBehaviour
             case "Back":
                 SceneManager.LoadScene("Menu");
                 break;
+            case "Return":
+
+                MainStudent.hp = 100;
+                MainStudent.oranges = 5;
+                MainStudent.previousOranges = 5;
+                MainStudent.cenaAtual = "Stage0";
+                MainStudent.lifes = 3;
+                SceneManager.LoadScene("Menu");
+                break;
 
             default:
                 break;

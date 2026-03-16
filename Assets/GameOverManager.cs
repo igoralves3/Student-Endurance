@@ -18,6 +18,7 @@ public class GameOverManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (Input.GetKey(KeyCode.Space))
         {
             MainStudent.hp = 100;
@@ -26,12 +27,12 @@ public class GameOverManager : MonoBehaviour
             MainStudent.cenaAtual = "Stage0";
             MainStudent.lifes = 3;
             SceneManager.LoadScene("Menu");
-        }
+        }*/
     }
 
     void OnGUI()
     {
-        GUI.Label(new Rect(Screen.width/2-144, Screen.height/2-2, 1000, 100), "Oh no! The bullies defeated you!\nPress Space bar to return to the menu.", style);
+        //GUI.Label(new Rect(Screen.width/2-144, Screen.height/2-2, 1000, 100), "Oh no! The bullies defeated you!\nPress Space bar to return to the menu.", style);
 
     }
 }

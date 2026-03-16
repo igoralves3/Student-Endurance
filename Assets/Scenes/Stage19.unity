@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &826165
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -610,6 +610,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 961594855715261025, guid: 082c0b6ba9772ad4ba789965ec51824d, type: 3}
+      propertyPath: blockade
+      value: 
+      objectReference: {fileID: 1209983724}
     - target: {fileID: 6537151398358282905, guid: 082c0b6ba9772ad4ba789965ec51824d, type: 3}
       propertyPath: m_Name
       value: ThrowerEnemyStudent (2)
@@ -1088,6 +1092,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 961594855715261025, guid: 082c0b6ba9772ad4ba789965ec51824d, type: 3}
+      propertyPath: blockade
+      value: 
+      objectReference: {fileID: 526045402}
     - target: {fileID: 6537151398358282905, guid: 082c0b6ba9772ad4ba789965ec51824d, type: 3}
       propertyPath: m_Name
       value: ThrowerEnemyStudent
@@ -1202,7 +1210,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1221,8 +1229,8 @@ Transform:
   m_GameObject: {fileID: 526045402}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.82, y: -4.0733, z: 0}
-  m_LocalScale: {x: 1, y: 1.4666771, z: 1}
+  m_LocalPosition: {x: 11, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 15.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1592,7 +1600,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1611,8 +1619,8 @@ Transform:
   m_GameObject: {fileID: 798474779}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40.01, y: -2.9856, z: 0}
-  m_LocalScale: {x: 1, y: 1.0712, z: 1}
+  m_LocalPosition: {x: 40.01, y: 4, z: 0}
+  m_LocalScale: {x: 1, y: 15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1787,7 +1795,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1806,8 +1814,8 @@ Transform:
   m_GameObject: {fileID: 919954713}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 100.17, y: -1.22, z: 0}
-  m_LocalScale: {x: 1, y: 1.4014983, z: 1}
+  m_LocalPosition: {x: 100.17, y: 4, z: 0}
+  m_LocalScale: {x: 1, y: 12, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1894,7 +1902,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1197269005
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2112,7 +2120,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2131,8 +2139,8 @@ Transform:
   m_GameObject: {fileID: 1209983724}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 71.42, y: -0.98, z: 0}
-  m_LocalScale: {x: 1, y: 1.0406, z: 1}
+  m_LocalPosition: {x: 71.42, y: 6, z: 0}
+  m_LocalScale: {x: 1, y: 15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2238,7 +2246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1358445639
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2403,6 +2411,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 961594855715261025, guid: 082c0b6ba9772ad4ba789965ec51824d, type: 3}
+      propertyPath: blockade
+      value: 
+      objectReference: {fileID: 798474779}
     - target: {fileID: 6537151398358282905, guid: 082c0b6ba9772ad4ba789965ec51824d, type: 3}
       propertyPath: m_Name
       value: ThrowerEnemyStudent (1)
@@ -2783,6 +2795,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 961594855715261025, guid: 082c0b6ba9772ad4ba789965ec51824d, type: 3}
+      propertyPath: blockade
+      value: 
+      objectReference: {fileID: 919954713}
     - target: {fileID: 6537151398358282905, guid: 082c0b6ba9772ad4ba789965ec51824d, type: 3}
       propertyPath: m_Name
       value: ThrowerEnemyStudent (3)
@@ -2957,7 +2973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &2138779637
 BoxCollider2D:
   m_ObjectHideFlags: 0

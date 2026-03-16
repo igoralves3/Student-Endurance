@@ -21,6 +21,8 @@ public class ThrowerBully : MonoBehaviour
 
     private int curDir = -1;
 
+    public GameObject blockade;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -123,9 +125,13 @@ public class ThrowerBully : MonoBehaviour
             if (health <= 0)
             {
                 AudioSource.PlayClipAtPoint(impact1, transform.position, (float)MenuManager.soundVolume*1.0F);
+
+                if (blockade != null)
+                {
+                    Destroy(blockade);
+                }
+
                 Destroy(gameObject);
-                  
-                
             }
         }
         else if (collision.gameObject.tag == "Player")
