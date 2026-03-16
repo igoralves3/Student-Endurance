@@ -155,6 +155,9 @@ ScriptsOnlyBuild:
     fullTypeName: MenuManager
     methodName: ButtonPress
   - assembly: Assembly-CSharp
+    fullTypeName: Dialog
+    methodName: OnButtonAdvanceDown
+  - assembly: Assembly-CSharp
     fullTypeName: MenuManager
     methodName: ButtonPress
   sceneClasses:
@@ -1576,8 +1579,26 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1640}
+    - Class: 114
       Script: {instanceID: 2086}
+    - Class: 114
+      Script: {instanceID: 2954}
+    - Class: 114
+      Script: {instanceID: 3226}
+    - Class: 114
+      Script: {instanceID: 3580}
+    - Class: 114
+      Script: {instanceID: 6144}
+    - Class: 114
+      Script: {instanceID: 6880}
+    - Class: 114
+      Script: {instanceID: 7096}
+    - Class: 114
+      Script: {instanceID: 7516}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -1586,6 +1607,12 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/Stage3.unity:
     - Class: 1
@@ -2265,7 +2292,7 @@ ScriptsOnlyBuild:
     className: Boss3
   - hash:
       serializedVersion: 2
-      Hash: 66448bdd8ea918147ace04205edca364
+      Hash: f83e64d7f798a162eec9fa8695db7657
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Dialog

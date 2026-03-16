@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+using UnityEngine.UI;
+
+using TMPro;
+
 public class Dialog : MonoBehaviour
 {
     struct DialogText
@@ -22,6 +26,10 @@ public class Dialog : MonoBehaviour
 
     private int maxPhases = 9;
     private int curPhase;
+
+    public TextMeshProUGUI text;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -64,39 +72,51 @@ public class Dialog : MonoBehaviour
         );
         dialogs[8] =new DialogText(
         person: "Game",
-        text: "You completed the game. \nPress SPACE bar to return to the menu. \nBut don't throw oranges on people in the real life." 
+        text: "You completed the game. \nBut don't throw oranges on people in the real life." 
         );
-    
-        
 
+
+        UpdateText();
     }
 
     // Update is called once per frame
-    void Update()
+   // void Update()
+   public void OnButtonAdvanceDown()
     {
         if (curPhase < maxPhases-1)
         {
-            if (Input.GetKeyDown("space"))
-            {
+           // if (Input.GetKeyDown("space"))
+            //{
                 curPhase++;
-            }
+                UpdateText();
+            //}
         }
         else
         {
-            if (Input.GetKeyDown("space"))
-            {
+            //if (Input.GetKeyDown("space"))
+            //{
                 MainStudent.lifes = 3;
                 MainStudent.hp = 100;
                 MainStudent.oranges = 5;
                 MainStudent.previousOranges = 5;
                 MainStudent.cenaAtual = "Stage0";
                 SceneManager.LoadScene("Menu");
-            }
+            //}
         }
+    }
+
+    void UpdateText()
+    {
+        var nt = dialogs[curPhase].person + "\n\n";
+
+        nt += dialogs[curPhase].text;
+
+        text.text = nt;
     }
 
     void OnGUI()
     {
+        /*
         if (dialogs[curPhase].person == "Player")
         {
             GUI.Label(new Rect(Screen.width / 4, 80, 10, 10), dialogs[curPhase].person, dialogStyle);
@@ -112,7 +132,7 @@ public class Dialog : MonoBehaviour
             GUI.Label(new Rect(Screen.width / 3, 80, 10, 10), dialogs[curPhase].person, dialogStyle);
             GUI.Label(new Rect(Screen.width / 3, 110, 100, 100), dialogs[curPhase].text, dialogStyle);
         }
-
+        */
         
 
     }
