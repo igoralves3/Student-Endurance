@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -107,6 +108,10 @@ public class MenuManager : MonoBehaviour
                 MainStudent.cenaAtual = "Stage0";
                 MainStudent.lifes = 3;
                 SceneManager.LoadScene("Menu");
+                break;
+
+            case "Quit":
+                Application.Quit();
                 break;
 
             default:

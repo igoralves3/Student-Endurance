@@ -155,6 +155,201 @@ ScriptsOnlyBuild:
     fullTypeName: MenuManager
     methodName: ButtonPress
   - assembly: Assembly-CSharp
+    fullTypeName: MenuManager
+    methodName: ButtonPress
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
     fullTypeName: Dialog
     methodName: OnButtonAdvanceDown
   - assembly: Assembly-CSharp
@@ -510,6 +705,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
+      Script: {instanceID: 3580}
+    - Class: 114
       Script: {instanceID: 4144}
     - Class: 114
       Script: {instanceID: 5698}
@@ -591,6 +788,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
+      Script: {instanceID: 3580}
+    - Class: 114
       Script: {instanceID: 4144}
     - Class: 114
       Script: {instanceID: 4708}
@@ -671,6 +870,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2886}
     - Class: 114
       Script: {instanceID: 3226}
+    - Class: 114
+      Script: {instanceID: 3580}
     - Class: 114
       Script: {instanceID: 4144}
     - Class: 114
@@ -759,6 +960,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
+      Script: {instanceID: 3580}
+    - Class: 114
       Script: {instanceID: 4144}
     - Class: 114
       Script: {instanceID: 5698}
@@ -843,6 +1046,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3210}
     - Class: 114
       Script: {instanceID: 3226}
+    - Class: 114
+      Script: {instanceID: 3580}
     - Class: 114
       Script: {instanceID: 4106}
     - Class: 114
@@ -933,6 +1138,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
+      Script: {instanceID: 3580}
+    - Class: 114
       Script: {instanceID: 4144}
     - Class: 114
       Script: {instanceID: 5698}
@@ -1016,6 +1223,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
+      Script: {instanceID: 3580}
+    - Class: 114
       Script: {instanceID: 4144}
     - Class: 114
       Script: {instanceID: 5638}
@@ -1097,6 +1306,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
+      Script: {instanceID: 3580}
+    - Class: 114
       Script: {instanceID: 3934}
     - Class: 114
       Script: {instanceID: 4144}
@@ -1177,6 +1388,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2886}
     - Class: 114
       Script: {instanceID: 3226}
+    - Class: 114
+      Script: {instanceID: 3580}
     - Class: 114
       Script: {instanceID: 3926}
     - Class: 114
@@ -1267,6 +1480,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
+      Script: {instanceID: 3580}
+    - Class: 114
       Script: {instanceID: 3934}
     - Class: 114
       Script: {instanceID: 4144}
@@ -1354,6 +1569,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
+      Script: {instanceID: 3580}
+    - Class: 114
       Script: {instanceID: 4144}
     - Class: 114
       Script: {instanceID: 5180}
@@ -1434,6 +1651,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2886}
     - Class: 114
       Script: {instanceID: 3226}
+    - Class: 114
+      Script: {instanceID: 3580}
     - Class: 114
       Script: {instanceID: 3926}
     - Class: 114
@@ -1519,6 +1738,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2886}
     - Class: 114
       Script: {instanceID: 3226}
+    - Class: 114
+      Script: {instanceID: 3580}
     - Class: 114
       Script: {instanceID: 4144}
     - Class: 114
@@ -1656,6 +1877,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
+      Script: {instanceID: 3580}
+    - Class: 114
       Script: {instanceID: 4144}
     - Class: 114
       Script: {instanceID: 4708}
@@ -1741,6 +1964,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
+      Script: {instanceID: 3580}
+    - Class: 114
       Script: {instanceID: 4144}
     - Class: 114
       Script: {instanceID: 5698}
@@ -1824,6 +2049,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
+      Script: {instanceID: 3580}
+    - Class: 114
       Script: {instanceID: 4144}
     - Class: 114
       Script: {instanceID: 5698}
@@ -1905,6 +2132,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
+      Script: {instanceID: 3580}
+    - Class: 114
       Script: {instanceID: 4144}
     - Class: 114
       Script: {instanceID: 5638}
@@ -1985,6 +2214,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2886}
     - Class: 114
       Script: {instanceID: 3226}
+    - Class: 114
+      Script: {instanceID: 3580}
     - Class: 114
       Script: {instanceID: 4144}
     - Class: 114
@@ -2075,6 +2306,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
+      Script: {instanceID: 3580}
+    - Class: 114
       Script: {instanceID: 4144}
     - Class: 114
       Script: {instanceID: 5698}
@@ -2161,6 +2394,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3080}
     - Class: 114
       Script: {instanceID: 3226}
+    - Class: 114
+      Script: {instanceID: 3580}
     - Class: 114
       Script: {instanceID: 4144}
     - Class: 114
@@ -3456,7 +3691,7 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: 2b49a60c5a4e76ecbd0aa6d2d93d3552
+      Hash: e0f85f7cd2b8e301442db1193f849f10
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PauseSystem
