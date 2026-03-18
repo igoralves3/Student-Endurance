@@ -76,6 +76,8 @@ public class MainStudent : MonoBehaviour
 
     private GameObject partner;
 
+    public Canvas pauseCanvas;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -132,6 +134,8 @@ public class MainStudent : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
     }
+
+  
 
 
     // Update is called once per frame
@@ -533,6 +537,9 @@ public class MainStudent : MonoBehaviour
     private void Awake()
     {
         pauseSystem = FindObjectOfType<PauseSystem>();
+        //pauseSystem.pauseCanvas = pauseCanvas;
+
+        
     }
 
 

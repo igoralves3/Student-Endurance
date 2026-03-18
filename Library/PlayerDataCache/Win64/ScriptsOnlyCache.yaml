@@ -159,9 +159,6 @@ ScriptsOnlyBuild:
     methodName: ButtonPress
   - assembly: Assembly-CSharp
     fullTypeName: PauseSystem
-    methodName: GiveUpGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
     methodName: PauseResumeGame
   - assembly: Assembly-CSharp
     fullTypeName: PauseSystem
@@ -169,60 +166,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: PauseSystem
     methodName: PauseResumeGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: PauseResumeGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: GiveUpGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: GiveUpGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: PauseResumeGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: PauseResumeGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: GiveUpGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: GiveUpGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: PauseResumeGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: PauseResumeGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: GiveUpGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: GiveUpGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: PauseResumeGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: PauseResumeGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: GiveUpGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: GiveUpGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: PauseResumeGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: PauseResumeGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: GiveUpGame
   - assembly: Assembly-CSharp
     fullTypeName: PauseSystem
     methodName: GiveUpGame
@@ -237,22 +180,16 @@ ScriptsOnlyBuild:
     methodName: PauseResumeGame
   - assembly: Assembly-CSharp
     fullTypeName: PauseSystem
-    methodName: PauseResumeGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: GiveUpGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
     methodName: GiveUpGame
   - assembly: Assembly-CSharp
     fullTypeName: PauseSystem
     methodName: PauseResumeGame
   - assembly: Assembly-CSharp
     fullTypeName: PauseSystem
-    methodName: PauseResumeGame
+    methodName: GiveUpGame
   - assembly: Assembly-CSharp
     fullTypeName: PauseSystem
-    methodName: GiveUpGame
+    methodName: PauseResumeGame
   - assembly: Assembly-CSharp
     fullTypeName: PauseSystem
     methodName: GiveUpGame
@@ -267,12 +204,6 @@ ScriptsOnlyBuild:
     methodName: PauseResumeGame
   - assembly: Assembly-CSharp
     fullTypeName: PauseSystem
-    methodName: PauseResumeGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: GiveUpGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
     methodName: GiveUpGame
   - assembly: Assembly-CSharp
     fullTypeName: PauseSystem
@@ -283,24 +214,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: PauseSystem
     methodName: PauseResumeGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: PauseResumeGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: GiveUpGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: GiveUpGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: PauseResumeGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: PauseResumeGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: GiveUpGame
   - assembly: Assembly-CSharp
     fullTypeName: PauseSystem
     methodName: GiveUpGame
@@ -315,12 +228,6 @@ ScriptsOnlyBuild:
     methodName: PauseResumeGame
   - assembly: Assembly-CSharp
     fullTypeName: PauseSystem
-    methodName: PauseResumeGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: GiveUpGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
     methodName: GiveUpGame
   - assembly: Assembly-CSharp
     fullTypeName: PauseSystem
@@ -333,12 +240,6 @@ ScriptsOnlyBuild:
     methodName: PauseResumeGame
   - assembly: Assembly-CSharp
     fullTypeName: PauseSystem
-    methodName: PauseResumeGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
-    methodName: GiveUpGame
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseSystem
     methodName: GiveUpGame
   - assembly: Assembly-CSharp
     fullTypeName: PauseSystem
@@ -349,6 +250,105 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: PauseSystem
     methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: PauseResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: GiveUpGame
   - assembly: Assembly-CSharp
     fullTypeName: Dialog
     methodName: OnButtonAdvanceDown
@@ -786,6 +786,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2886}
     - Class: 114
+      Script: {instanceID: 2954}
+    - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
       Script: {instanceID: 3580}
@@ -807,6 +809,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7096}
     - Class: 114
       Script: {instanceID: 7314}
+    - Class: 114
+      Script: {instanceID: 7516}
     - Class: 114
       Script: {instanceID: 7552}
     - Class: 114
@@ -869,6 +873,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2886}
     - Class: 114
+      Script: {instanceID: 2954}
+    - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
       Script: {instanceID: 3580}
@@ -896,6 +902,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7314}
     - Class: 114
       Script: {instanceID: 7376}
+    - Class: 114
+      Script: {instanceID: 7516}
     - Class: 114
       Script: {instanceID: 7552}
     - Class: 114
@@ -956,6 +964,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2886}
     - Class: 114
+      Script: {instanceID: 2954}
+    - Class: 114
       Script: {instanceID: 3184}
     - Class: 114
       Script: {instanceID: 3226}
@@ -979,6 +989,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7096}
     - Class: 114
       Script: {instanceID: 7314}
+    - Class: 114
+      Script: {instanceID: 7516}
     - Class: 114
       Script: {instanceID: 7552}
     - Class: 114
@@ -1043,6 +1055,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2886}
     - Class: 114
+      Script: {instanceID: 2954}
+    - Class: 114
       Script: {instanceID: 3210}
     - Class: 114
       Script: {instanceID: 3226}
@@ -1070,6 +1084,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7096}
     - Class: 114
       Script: {instanceID: 7314}
+    - Class: 114
+      Script: {instanceID: 7516}
     - Class: 114
       Script: {instanceID: 7552}
     - Class: 114
@@ -1136,6 +1152,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2886}
     - Class: 114
+      Script: {instanceID: 2954}
+    - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
       Script: {instanceID: 3580}
@@ -1159,6 +1177,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7096}
     - Class: 114
       Script: {instanceID: 7314}
+    - Class: 114
+      Script: {instanceID: 7516}
     - Class: 114
       Script: {instanceID: 7552}
     - Class: 114
@@ -1221,6 +1241,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2886}
     - Class: 114
+      Script: {instanceID: 2954}
+    - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
       Script: {instanceID: 3580}
@@ -1242,6 +1264,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7096}
     - Class: 114
       Script: {instanceID: 7314}
+    - Class: 114
+      Script: {instanceID: 7516}
     - Class: 114
       Script: {instanceID: 7552}
     - Class: 114
@@ -1304,6 +1328,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2886}
     - Class: 114
+      Script: {instanceID: 2954}
+    - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
       Script: {instanceID: 3580}
@@ -1329,6 +1355,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7096}
     - Class: 114
       Script: {instanceID: 7314}
+    - Class: 114
+      Script: {instanceID: 7516}
     - Class: 114
       Script: {instanceID: 7552}
     - Class: 114
@@ -1387,6 +1415,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2886}
     - Class: 114
+      Script: {instanceID: 2954}
+    - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
       Script: {instanceID: 3580}
@@ -1414,6 +1444,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7096}
     - Class: 114
       Script: {instanceID: 7314}
+    - Class: 114
+      Script: {instanceID: 7516}
     - Class: 114
       Script: {instanceID: 7552}
     - Class: 114
@@ -1478,6 +1510,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2886}
     - Class: 114
+      Script: {instanceID: 2954}
+    - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
       Script: {instanceID: 3580}
@@ -1503,6 +1537,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7096}
     - Class: 114
       Script: {instanceID: 7314}
+    - Class: 114
+      Script: {instanceID: 7516}
     - Class: 114
       Script: {instanceID: 7552}
     - Class: 114
@@ -1565,6 +1601,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2886}
     - Class: 114
+      Script: {instanceID: 2954}
+    - Class: 114
       Script: {instanceID: 3080}
     - Class: 114
       Script: {instanceID: 3226}
@@ -1590,6 +1628,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7096}
     - Class: 114
       Script: {instanceID: 7314}
+    - Class: 114
+      Script: {instanceID: 7516}
     - Class: 114
       Script: {instanceID: 7552}
     - Class: 114
@@ -1650,6 +1690,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2886}
     - Class: 114
+      Script: {instanceID: 2954}
+    - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
       Script: {instanceID: 3580}
@@ -1675,6 +1717,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7096}
     - Class: 114
       Script: {instanceID: 7314}
+    - Class: 114
+      Script: {instanceID: 7516}
     - Class: 114
       Script: {instanceID: 7552}
     - Class: 114
@@ -1737,6 +1781,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2886}
     - Class: 114
+      Script: {instanceID: 2954}
+    - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
       Script: {instanceID: 3580}
@@ -1760,6 +1806,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7096}
     - Class: 114
       Script: {instanceID: 7314}
+    - Class: 114
+      Script: {instanceID: 7516}
     - Class: 114
       Script: {instanceID: 7552}
     - Class: 114
@@ -1875,6 +1923,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2886}
     - Class: 114
+      Script: {instanceID: 2954}
+    - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
       Script: {instanceID: 3580}
@@ -1896,6 +1946,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7096}
     - Class: 114
       Script: {instanceID: 7314}
+    - Class: 114
+      Script: {instanceID: 7516}
     - Class: 114
       Script: {instanceID: 7552}
     - Class: 114
@@ -1962,6 +2014,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2886}
     - Class: 114
+      Script: {instanceID: 2954}
+    - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
       Script: {instanceID: 3580}
@@ -1983,6 +2037,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7096}
     - Class: 114
       Script: {instanceID: 7314}
+    - Class: 114
+      Script: {instanceID: 7516}
     - Class: 114
       Script: {instanceID: 7552}
     - Class: 114
@@ -2047,6 +2103,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2886}
     - Class: 114
+      Script: {instanceID: 2954}
+    - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
       Script: {instanceID: 3580}
@@ -2066,6 +2124,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7096}
     - Class: 114
       Script: {instanceID: 7314}
+    - Class: 114
+      Script: {instanceID: 7516}
     - Class: 114
       Script: {instanceID: 7552}
     - Class: 114
@@ -2130,6 +2190,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2886}
     - Class: 114
+      Script: {instanceID: 2954}
+    - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
       Script: {instanceID: 3580}
@@ -2151,6 +2213,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7096}
     - Class: 114
       Script: {instanceID: 7314}
+    - Class: 114
+      Script: {instanceID: 7516}
     - Class: 114
       Script: {instanceID: 7552}
     - Class: 114
@@ -2213,6 +2277,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2886}
     - Class: 114
+      Script: {instanceID: 2954}
+    - Class: 114
       Script: {instanceID: 3226}
     - Class: 114
       Script: {instanceID: 3580}
@@ -2238,6 +2304,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7238}
     - Class: 114
       Script: {instanceID: 7314}
+    - Class: 114
+      Script: {instanceID: 7516}
     - Class: 114
       Script: {instanceID: 7552}
     - Class: 114
@@ -2391,6 +2459,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2886}
     - Class: 114
+      Script: {instanceID: 2954}
+    - Class: 114
       Script: {instanceID: 3080}
     - Class: 114
       Script: {instanceID: 3226}
@@ -2414,6 +2484,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7096}
     - Class: 114
       Script: {instanceID: 7314}
+    - Class: 114
+      Script: {instanceID: 7516}
     - Class: 114
       Script: {instanceID: 7552}
     - Class: 114
@@ -2641,7 +2713,7 @@ ScriptsOnlyBuild:
     className: UnityOnBecameVisibleMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 704002873087222c616c0cf6862bc444
+      Hash: 1043a4cd3d6c62dea9e141f05e92ee9c
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: MainStudent
@@ -3691,7 +3763,7 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: e0f85f7cd2b8e301442db1193f849f10
+      Hash: 344dc291ca28c6ddc01db8de75876109
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PauseSystem
